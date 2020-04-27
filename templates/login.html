@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <p class="h1 mt-3 ml-3"> Войти </p>
+
+    {% include 'inc/input.html' with title='Логин' %}
+
+    {% include 'inc/password_input.html' %}
+
+    {% include 'inc/action_button.html' with text='Войти' %}
+
+    <div class="input-group mt-3">
+        <p class="mt-2 col-3"></p>
+        <a href="{% url 'signup' %}">Регистрация</a>
+    </div>
+
+
+{% endblock content %}

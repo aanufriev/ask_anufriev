@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <p class="h1 mt-3 ml-3"> Новые Вопросы </p>
+    {% for question in questions %}
+      {% include 'inc/question.html' with q=question t=question.tag %}
+    {% endfor %}
+
+    {% include 'inc/paginator.html' %}
+{% endblock content %}

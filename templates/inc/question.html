@@ -1,0 +1,21 @@
+{% load static %}
+
+<div class="media mt-4 p-2" style="border-style: double; border-width: 5px;">
+  <img src="{% static 'img/avatar.png' %}" class="mr-3 col-3">
+  <div class="media-body">
+    <h5>
+      <a href="{% url 'question' qid=q.id %}" class="text-dark">{{ q.title }}</a>
+    </h5>
+    <p> {{ q.text }} </p>
+    <div class="input-group">
+      <p class="mr-1">Tags: </p>
+      {% for tag in question.tag.all %}
+        <a href="{% url 'tag' tag_name=tag.name %}" class="base_link_v1 mr-2">{{ tag.name }}</a>
+      {% endfor %}
+    </div>
+    <div class="input-group justify-content-end">
+      <button type="button" class="btn btn-success m-2">+</button>
+      <button type="button" class="btn btn-danger m-2">-</button>
+    </div>
+  </div>
+</div>

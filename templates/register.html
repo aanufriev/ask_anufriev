@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <p class="h1 mt-3 ml-3"> Регистрация </p>
+
+    {% include 'inc/input.html' with title='Логин' %}
+
+    {% include 'inc/password_input.html' with is_repeat='true' %}
+
+    {% include 'inc/email_input.html'%}
+
+    {% include 'inc/input.html' with title='Псевдоним' %}
+
+    <div class="input-group mt-3">
+        <p class="mt-2 col-3"> Загрузите аватар </p>
+        <div class="form-group mt-2">
+            <input type="file" class="form-control-file">
+        </div>
+    </div>
+
+    {% include 'inc/action_button.html' with text='Зарегистрироваться' %}
+
+
+{% endblock content %}

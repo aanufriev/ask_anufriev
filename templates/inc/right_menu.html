@@ -1,0 +1,18 @@
+<div class="alert alert-secondary">
+  <p>
+    Популярные теги#
+    <div>
+      {% for tag in tags %}
+        <a href="{% url 'tag' tag_name=tag.name %}" class="base_link_v1 mr-2">{{ tag.name }}</a>
+      {% endfor %}
+    </div>
+  </p>
+  <p>
+    Самые активные пользователи
+    <div>
+      {% for member in members %}
+        <a href="#" class="base_link_v1 mr-2">{{ member.nickname }}</a>
+      {% endfor %}
+    </div>
+  </p>
+</div>

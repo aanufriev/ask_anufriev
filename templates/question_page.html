@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    {% include 'inc/question.html' with q=question %}
+    {% for answer in answers %}
+      {% include 'inc/answer.html' with a=answer %}
+    {% endfor %}
+
+    {% include 'inc/paginator.html' %}
+{% endblock content %}
