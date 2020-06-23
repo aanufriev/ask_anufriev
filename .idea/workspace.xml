@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23364bb7-2307-49b0-ac99-1ae97c33d328" name="Default Changelist" comment="" />
+    <list default="true" id="23364bb7-2307-49b0-ac99-1ae97c33d328" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sem2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sem2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/askme/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/askme/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/askme/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/askme/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ask.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ask.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/inc/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inc/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/question_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/question_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/settings.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,8 +28,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZGDItZ9DPenZk3NmOUTVFAz1EG" />
   <component name="ProjectViewState">
@@ -23,6 +44,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -44,14 +66,15 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="240" y="77" key="#Inspections/0.23.1280.777@0.23.1280.777" timestamp="1585905160744" />
-    <state x="141" y="50" key="SettingsEditor" timestamp="1585905238378">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="141" y="28" key="SettingsEditor" timestamp="1592907612558">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="141" y="28" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1592907612558" />
     <state x="141" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1585905238378" />
-    <state x="317" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1587998443582">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="317" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1592893353757">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="317" y="228" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1586249059162" />
-    <state x="317" y="244" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1587998443582" />
+    <state x="317" y="244" key="com.intellij.ide.util.TipDialog/0.0.1280.800@0.0.1280.800" timestamp="1592893353757" />
+    <state x="317" y="244" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1592844667398" />
   </component>
 </project>

@@ -1,19 +1,17 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load bootstrap4 %}
 
 {% block content %}
     <p class="h1 mt-3 ml-3"> Войти </p>
 
-    {% include 'inc/input.html' with title='Логин' %}
-
-    {% include 'inc/password_input.html' %}
-
-    {% include 'inc/action_button.html' with text='Войти' %}
-
-    <div class="input-group mt-3">
-        <p class="mt-2 col-3"></p>
-        <a href="{% url 'signup' %}">Регистрация</a>
-    </div>
-
+    <form class="form mt-5" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+            <button type="submit" class="btn btn-primary">Войти</button>
+            <a class="ml-5" href="{% url 'signup' %}">Регистрация</a>
+        {% endbuttons %}
+    </form>
 
 {% endblock content %}

@@ -21,12 +21,22 @@
         </div>
       </div>
     </div>
+
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'login' %}">Войти</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="{% url 'signup' %}">Регистрация</a>
-      </li>
+        {% if profile.user.is_authenticated %}
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'settings' %}">{{ profile.nickname }}</a>
+        </li>
+        {% else %}
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'login' %}">Войти</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'signup' %}">Регистрация</a>
+        </li>
+        {% endif %}
     </ul>
+
+
+
   </nav>

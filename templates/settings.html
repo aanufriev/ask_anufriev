@@ -1,28 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load bootstrap4 %}
 
 {% block content %}
 
     <p class="h1 mt-3 ml-3"> Настройки </p>
 
-    {% include 'inc/input.html' with title='Логин' %}
-
-    {% include 'inc/email_input.html'%}
-
-    {% include 'inc/input.html' with title='Псевдоним' %}
-
-    <div class="input-group mt-3">
-        <p class="mt-2 col-3"> Загрузите аватар </p>
-        <img src="{% static 'img/avatar.png' %}" class="col-2">
-    </div>
-
-    <div class="input-group mt-3">
-        <p class="mt-2 col-3"></p>
-        <div class="form-group mt-2">
-            <input type="file" class="form-control-file">
-        </div>
-    </div>
-
-    {% include 'inc/action_button.html' with text='Сохранить' %}
+    <form class="form mt-5" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form_u %}
+        {% bootstrap_form form_p %}
+        {% buttons %}
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+        {% endbuttons %}
+    </form>
 
 {% endblock content %}
